@@ -166,5 +166,61 @@
       "tags_updated_at": "2026-05-11T21:07:58+00:00",
       "updated_at": "2026-05-11T21:07:58+00:00"
     }
+  },
+  {
+    "asset_id": "5c8e04f9e77ff108c33b2fa5ba1a16ba",
+    "public_id": "signal-2025-12-13-14-27-38-273_c0nykn",
+    "format": "jpg",
+    "version": 1778533403,
+    "resource_type": "image",
+    "type": "upload",
+    "created_at": "2026-05-11T21:03:23Z",
+    "bytes": 289692,
+    "width": 1536,
+    "height": 1566,
+    "asset_folder": "gallery",
+    "display_name": "signal-2025-12-13-14-27-38-273_c0nykn",
+    "url": "http://res.cloudinary.com/dhguvzawz/image/upload/v1778533403/signal-2025-12-13-14-27-38-273_c0nykn.jpg",
+    "secure_url": "https://res.cloudinary.com/dhguvzawz/image/upload/v1778533403/signal-2025-12-13-14-27-38-273_c0nykn.jpg",
+    "last_updated": {
+      "tags_updated_at": "2026-05-11T21:07:58+00:00",
+      "updated_at": "2026-05-11T21:07:58+00:00"
+    }
+  },
+  {
+    "asset_id": "b40f9eb24463cdbb6c4779c1f3e5148d",
+    "public_id": "signal-2025-12-19-12-09-05-877_vdodno",
+    "format": "jpg",
+    "version": 1778533403,
+    "resource_type": "image",
+    "type": "upload",
+    "created_at": "2026-05-11T21:03:23Z",
+    "bytes": 142630,
+    "width": 1200,
+    "height": 1600,
+    "asset_folder": "gallery",
+    "display_name": "signal-2025-12-19-12-09-05-877_vdodno",
+    "url": "http://res.cloudinary.com/dhguvzawz/image/upload/v1778533403/signal-2025-12-19-12-09-05-877_vdodno.jpg",
+    "secure_url": "https://res.cloudinary.com/dhguvzawz/image/upload/v1778533403/signal-2025-12-19-12-09-05-877_vdodno.jpg",
+    "last_updated": {
+      "tags_updated_at": "2026-05-11T21:07:58+00:00",
+      "updated_at": "2026-05-11T21:07:58+00:00"
+    }
+  },
+  {
+    "asset_id": "b1f7e68ba6df76e66e3ba30f1ce8a40d",
+    "public_id": "signal-2025-12-13-14-27-38-273_zo5brx",
+    "format": "jpg",
+    "version": 1778533263,
+    "resource_type": "image",
+    "type": "upload",
+    "created_at": "2026-05-11T21:01:03Z",
+    "bytes": 289692,
+    "width": 1536,
+    "height": 1566,
+    "asset_folder": "",
+    "display_name": "signal-2025-12-13-14-27-38-273_zo5brx",
+    "url": "http://res.cloudinary.com/dhguvzawz/image/upload/v1778533263/signal-2025-12-13-14-27-38-273_zo5brx.jpg",
+    "secure_url": "https://res.cloudinary.com/dhguvzawz/image/upload/v1778533263/signal-2025-12-13-14-27-38-273_zo5brx.jpg"
   }
 ]
