@@ -77,6 +77,12 @@ img:hover {
 #lightboxImage {
   max-width: 92vw;
   max-height: 92vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
   border-radius: 8px;
 }
 
@@ -110,10 +116,24 @@ img:hover {
 
 #closeBtn {
   position: absolute;
-  top: 20px;
-  right: 25px;
+  top: 12px;
+  right: 12px;
+
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255,255,255,0.12);
+
+  border-radius: 999px;
 
   color: white;
-  font-size: 32px;
+  font-size: 28px;
+
   cursor: pointer;
+
+  user-select: none;
 }
