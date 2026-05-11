@@ -1,18 +1,47 @@
 fetch('./images.json')
-  .then(response => response.json())
-  .then(images => {
 
-    const gallery = document.getElementById('gallery');
+      if (!lightbox.classList.contains('visible')) return;
 
-    images.sort((a, b) =>
-      new Date(b.created_at) - new Date(a.created_at)
-    );
+      if (e.key === 'ArrowRight') {
+        showNext();
+      }
 
-    images.forEach(image => {
+      if (e.key === 'ArrowLeft') {
+        showPrev();
+      }
 
-      const link = document.createElement('a');
-      link.href = image.secure_url;
-      link.target = "_blank";
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+
+    // ---------- SWIPE SUPPORT ----------
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    lightbox.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    lightbox.addEventListener('touchend', (e) => {
+
+      touchEndX = e.changedTouches[0].screenX;
+
+      const distance = touchEndX - touchStartX;
+
+      if (distance < -50) {
+        showNext();
+      }
+
+      if (distance > 50) {
+        showPrev();
+      }
+    });
+
+    // ---------- GALLERY ----------
+
+    images.forEach((image, index) => {
 
       const img = document.createElement('img');
 
@@ -20,9 +49,22 @@ fetch('./images.json')
         '/upload/',
         '/upload/w_800,q_auto,f_auto/'
       );
-      img.loading = "lazy";
 
-      link.appendChild(img);
-      gallery.appendChild(link);
+      img.loading = 'lazy';
+
+      // Fade in
+      img.onload = () => {
+        img.classList.add('loaded');
+      };
+
+      // Open fullscreen
+      img.addEventListener('click', () => {
+        openLightbox(index);
+      });
+
+      gallery.appendChild(img);
     });
+  })
+  .catch(error => {
+    console.error('Error loading gallery:', error);
   });
