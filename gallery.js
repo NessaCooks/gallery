@@ -16,7 +16,10 @@ fetch('./images.json')
 
       const img = document.createElement('img');
 
-      img.src = image.secure_url;
+      img.src = image.secure_url.replace(
+        '/upload/',
+        '/upload/w_800,q_auto,f_auto/'
+      );
       img.loading = "lazy";
 
       link.appendChild(img);
