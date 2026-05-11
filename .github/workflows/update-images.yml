@@ -19,7 +19,7 @@ jobs:
       - name: Fetch Cloudinary images
         run: |
           curl -u "${{ secrets.CLOUDINARY_API_KEY }}:${{ secrets.CLOUDINARY_API_SECRET }}" \
-          "https://api.cloudinary.com/v1_1/${{ secrets.CLOUDINARY_CLOUD_NAME }}/resources/image/upload?prefix=&max_results=100" \
+          "https://api.cloudinary.com/v1_1/${{ secrets.CLOUDINARY_CLOUD_NAME }}/resources/image/upload?prefix=&max_results=100&direction=desc" \
           -o images.json
 
       - name: Extract resources array
